@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi" translate="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" content="notranslate"><meta name="robots" content="noindex">
+<title>Vào lớp · Workshop BĐS dòng tiền</title>
+<meta property="og:title" content="Vào lớp · Workshop BĐS dòng tiền – Nguyễn Minh Luân">
+<meta property="og:description" content="Thứ Năm 20:30–22:00 · 05/11 → 03/12/2026 · Bấm để vào Zoom">
+<style>
+:root{--n:#0f1e33;--g:#c9a24a;--t:#1d2433;--m:#5b6474;--b:#e6e1d6;--bg:#faf8f3}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--t);background:var(--bg);line-height:1.5}
+.top{background:var(--n);color:var(--g);padding:12px 16px;font-weight:700;font-size:15px}
+.w{max-width:520px;margin:0 auto;padding:24px 16px 40px;text-align:center}
+h1{font-size:22px;line-height:1.3;margin:0 0 4px}.sub{color:var(--m);margin:0 0 16px}
+.st{font-size:14px;color:var(--m)}.cd{font-size:30px;font-weight:800;color:#1f7a3a;font-variant-numeric:tabular-nums;margin:2px 0}
+.live{color:#1f7a3a;font-weight:700}.end{color:#b3261e;font-weight:700}
+label{display:block;font-weight:700;font-size:14px;margin:22px 0 6px;text-transform:uppercase}label i{color:#b3261e;font-style:normal}
+input{width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid #cfc8b8;border-radius:9px;text-align:center}
+.err{color:#b3261e;font-size:14px;min-height:20px;margin:6px 0 0}
+.btn{display:block;width:100%;margin:12px 0 0;padding:14px;border:0;border-radius:10px;background:#2d6cdf;color:#fff;font-size:17px;font-weight:700;cursor:pointer}
+.lnk{background:none;border:0;color:#2d6cdf;font-size:15px;margin-top:10px;cursor:pointer;text-decoration:underline}
+table{width:100%;border-collapse:collapse;margin-top:26px;font-size:14px;text-align:left;background:#fff;border:1px solid var(--b)}
+td{padding:9px 12px;border-bottom:1px solid var(--b)}td:first-child{color:var(--m);width:38%}
+.id{margin-top:14px;font-size:13px;color:var(--m)}.reg{margin-top:22px;font-size:14px}.reg a{color:#2d6cdf}
+</style></head><body>
+<div class="top">NGƯỜI TRONG CUỘC · Nói thật · Dạy thật · Làm thật</div>
+<main class="w">
+<h1 id="ten-buoi">WORKSHOP BĐS DÒNG TIỀN – CĂN HỘ DỊCH VỤ CAO CẤP</h1>
+<p class="sub" id="chu-de"></p>
+<div class="st" id="nhan"></div><div class="cd" id="dem"></div>
+<label for="ten">Bạn cần nhập tên để vào Zoom <i>*</i></label>
+<input id="ten" maxlength="60" placeholder="Tên – Khu vực (VD: Lan – Cầu Giấy)" autocomplete="name">
+<p class="err" id="loi"></p>
+<button class="btn" id="app">Tham gia bằng Zoom</button>
+<button class="lnk" id="web">Tham gia bằng trình duyệt web</button>
+<table>
+<tr><td>Buổi</td><td id="tt-buoi"></td></tr>
+<tr><td>Ngày diễn ra</td><td id="tt-ngay"></td></tr>
+<tr><td>Giờ</td><td>20:15 mở phòng · 20:30 – 22:00</td></tr>
+<tr><td>Người chủ trì</td><td>Nguyễn Minh Luân</td></tr>
+</table>
+<p class="id">Vào Zoom bằng tay: ID <b>715 8308 3953</b> · Mật khẩu <b>9qz7cv</b></p>
+<p class="reg">Chưa giữ chỗ? <a href="https://hook.eu1.make.com/m8wedhpzo45joq3gmumqtst6ne32uk0o?utm_source=trang_zoom">Đăng ký miễn phí</a> để nhận nhắc lịch qua Zalo.</p>
+</main>
+<script>
+var ID="71583083953",PWD="A8Npi8g0JGP9pR0yp9kb3IFPghfh0L.1",HOST="https://us04web.zoom.us";
+var B=[["2026-11-05","Vì sao phải sở hữu BĐS dòng tiền trong chu kỳ này"],
+["2026-11-12","Tư duy nhà đầu tư dòng tiền & mô hình căn hộ dịch vụ"],
+["2026-11-19","Chọn vị trí – mua đất – pháp lý"],
+["2026-11-26","Thiết kế – xây dựng – vật liệu – nội thất – PCCC"],
+["2026-12-03","Vận hành cho thuê – marketing – bán toà theo dòng tiền"]];
+var T=["CN","T2","T3","T4","T5","T6","T7"];
+function mo(d){return new Date(d+"T20:15:00+07:00")}function het(d){return new Date(d+"T22:15:00+07:00")}
+function hien(){var now=new Date(),i=0;while(i<B.length-1&&now>het(B[i][0]))i++;
+var b=B[i],a=mo(b[0]),z=het(b[0]),p=b[0].split("-"),thu=T[new Date(b[0]+"T12:00:00+07:00").getUTCDay()];
+document.getElementById("chu-de").textContent="Buổi "+(i+1)+": "+b[1];
+document.getElementById("tt-buoi").textContent=(i+1)+"/5 · "+b[1];
+document.getElementById("tt-ngay").textContent=thu+", "+p[2]+"/"+p[1]+"/"+p[0];
+var n=document.getElementById("nhan"),d=document.getElementById("dem");
+if(now<a){var s=Math.floor((a-now)/1e3),g=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),c=s%60;
+n.textContent="Phòng Zoom mở sau";d.className="cd";d.textContent=(g?g+" ngày ":"")+[h,m,c].map(function(x){return(x<10?"0":"")+x}).join(":")}
+else if(now<=z){n.textContent="";d.className="cd live";d.textContent="Đang diễn ra – vào lớp ngay"}
+else{n.textContent="";d.className="cd end";d.textContent="Workshop đã kết thúc"}}
+hien();setInterval(hien,1000);
+var o=document.getElementById("ten");try{o.value=localStorage.getItem("ten_zoom")||""}catch(e){}
+function vao(web){var t=o.value.trim();if(t.length<2){document.getElementById("loi").textContent="Anh chị nhập tên để vào Zoom nhé";o.focus();return}
+try{localStorage.setItem("ten_zoom",t)}catch(e){}var u=encodeURIComponent(t);
+location.href=web?HOST+"/wc/join/"+ID+"?pwd="+PWD+"&uname="+u:HOST+"/j/"+ID+"?pwd="+PWD+"&uname="+u}
+document.getElementById("app").onclick=function(){vao(false)};document.getElementById("web").onclick=function(){vao(true)};
+o.addEventListener("keydown",function(e){if(e.key==="Enter")vao(false)});
+</script>
+</body></html>
